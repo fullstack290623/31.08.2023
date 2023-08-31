@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+
+        function getSmallest(x1, x2, x3, x4) {
+            //if (x1 >= 1 && x1 <= 5) ...
+            for (let i = 1; i <= 5; i++) {
+                if ([x1, x2, x3, x4].indexOf(1) >= 0 )
+                return -1
+            }
+
+            return Math.min(x1, x2, x3, x4)
+            // if (x1 >= x2 && x1 >= x3 && x1 >= x4) {
+            //     return x1
+            // }
+        }
+
+        const list1 = [5, 7, 8, -2]
+        //getSmallest(list1[0], list1[1], list[3])
+        getSmallest(5, 7, 8, -2)
+        // spread operator
+        getSmallest(...list1)
+        Math.min(...list1)
+
+        function getEqual(x1, x2, x3, x4) {
+            //if (x1 == x2 && x1 == x3 && x1 == x4) ...
+            const arr = [x1, x2, x3, x4]
+            //if (Math.max(...arr) == Math.min(...arr)) ...
+
+            //if (arr.every(x => x == arr[0])
+
+            //if ([1, 2, -1].every(x => x > 0)) ==> true
+            //[1, 5, 9].indexOf(9) == 2
+            //arr[3]
+            // if (x1 == x2 == x3 || x1 == x2 == x4 ||
+            //     x2 == x3 == x4 || x1 == x3 == x4)
+        }        
+
+    </script>
+</body>
+</html>
